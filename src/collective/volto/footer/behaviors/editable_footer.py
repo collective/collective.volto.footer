@@ -30,9 +30,28 @@ class IEditableFooter(model.Schema):
         title=_("Footer Blocks"),
         description=_("Define the footer blocks for this project"),
         default={
-            "blocks": {},
-            "blocks_layout": [],
-        },
+    "blocks": {
+        "5791a99b-24c7-413e-a259-52330269c93d": {
+            "@type": "slate",
+            "plaintext": "Hello, you have installed collective.volto.footer. This add-on let's you edit this footer",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Hello, you have installed collective.volto.footer. This add-on let's you edit this footer"
+                        }
+                    ],
+                    "type": "h2"
+                }
+            ]
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "5791a99b-24c7-413e-a259-52330269c93d"
+        ]
+    },
+},
         required=False,
     )
 
