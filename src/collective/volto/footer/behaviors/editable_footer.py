@@ -12,16 +12,21 @@ from zope.interface import provider
 
 
 class IEditableFooterMarker(Interface):
+    """ Marker interface for editable footer blocks in Volto projects.
+    """
     pass
-
 
 @provider(IFormFieldProvider)
 class IEditableFooter(model.Schema):
-    """ """
-
-    project = schema.TextLine(
-        title=_("Project"),
-        description=_("Give in a project name"),
+    """ Behavior for editable footer blocks in Volto projects.
+    """
+    footer = schema.JSONField(
+        title=_("Footer Blocks"),
+        description=_("Define the footer blocks for this project"),
+        default={
+            "blocks": {},
+            "blocks_layout": [],
+        },
         required=False,
     )
 
@@ -33,11 +38,11 @@ class EditableFooter(object):
         self.context = context
 
     @property
-    def project(self):
-        if safe_hasattr(self.context, "project"):
-            return self.context.project
+    def footer(self):
+        if safe_hasattr(self.context, "footer"):
+            return self.context.footer
         return None
 
-    @project.setter
-    def project(self, value):
-        self.context.project = value
+    @footer.setter
+    def footer(self, value):
+        self.context.footer = value

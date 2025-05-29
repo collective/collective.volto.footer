@@ -10,13 +10,12 @@
     <!-- -*- extra stuff goes here -*- -->
 
     <plone:behavior
-        name="collective.volto.footer.editable_footer"
-        title="EditableFooter"
-        description="This behavior provides..."
+        name="collective.volto.footer.editable"
+        title="Editable Footer"
+        description="This behavior provides backend support for the editable footer in Volto"
         provides=".editable_footer.IEditableFooter"
         factory=".editable_footer.EditableFooter"
         marker=".editable_footer.IEditableFooterMarker"
         />
-
 
 </configure>
