@@ -20,6 +20,12 @@ class IEditableFooterMarker(Interface):
 class IEditableFooter(model.Schema):
     """ Behavior for editable footer blocks in Volto projects.
     """
+    model.fieldset(
+        "layout",
+        label=_("Layout"),
+        fields=["footer"],
+    )
+
     footer = schema.JSONField(
         title=_("Footer Blocks"),
         description=_("Define the footer blocks for this project"),
