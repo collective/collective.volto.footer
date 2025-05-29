@@ -12,14 +12,15 @@ from zope.interface import provider
 
 
 class IEditableFooterMarker(Interface):
-    """ Marker interface for editable footer blocks in Volto projects.
-    """
+    """Marker interface for editable footer blocks in Volto projects."""
+
     pass
+
 
 @provider(IFormFieldProvider)
 class IEditableFooter(model.Schema):
-    """ Behavior for editable footer blocks in Volto projects.
-    """
+    """Behavior for editable footer blocks in Volto projects."""
+
     model.fieldset(
         "layout",
         label=_("Layout"),
@@ -30,28 +31,28 @@ class IEditableFooter(model.Schema):
         title=_("Footer Blocks"),
         description=_("Define the footer blocks for this project"),
         default={
-    "blocks": {
-        "5791a99b-24c7-413e-a259-52330269c93d": {
-            "@type": "slate",
-            "plaintext": "Hello, you have installed collective.volto.footer. This add-on let's you edit this footer",
-            "value": [
-                {
-                    "children": [
+            "blocks": {
+                "e113cf00-f7fb-4870-a49c-a15b84fcfd99": {
+                    "@type": "slate",
+                    "value": [
                         {
-                            "text": "Hello, you have installed collective.volto.footer. This add-on let's you edit this footer"
+                            "type": "p",
+                            "children": [
+                                {"text": ""},
+                                {
+                                    "type": "link",
+                                    "data": {"url": "http://localhost:3000/edit"},
+                                    "children": [{"text": "Edit"}],
+                                },
+                                {"text": ""},
+                            ],
                         }
                     ],
-                    "type": "h2"
+                    "plaintext": " Edit ",
                 }
-            ]
-        }
-    },
-    "blocks_layout": {
-        "items": [
-            "5791a99b-24c7-413e-a259-52330269c93d"
-        ]
-    },
-},
+            },
+            "blocks_layout": {"items": ["e113cf00-f7fb-4870-a49c-a15b84fcfd99"]},
+        },
         required=False,
     )
 

@@ -13,9 +13,9 @@
         name="collective.volto.footer.editable"
         title="Editable Footer"
         description="This behavior provides backend support for the editable footer in Volto"
-        provides=".editable_footer.IEditableFooter"
-        factory=".editable_footer.EditableFooter"
-        marker=".editable_footer.IEditableFooterMarker"
+        provides=".footer.IEditableFooter"
+        factory=".footer.EditableFooter"
+        marker=".footer.IEditableFooterMarker"
         />
 
 </configure>

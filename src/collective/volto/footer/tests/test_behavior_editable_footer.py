@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from collective.volto.footer.behaviors.editable_footer import IEditableFooterMarker
+from collective.volto.footer.behaviors.footer import IEditableFooterMarker
 from collective.volto.footer.testing import (  # noqa
     COLLECTIVE_VOLTO_FOOTER_INTEGRATION_TESTING,
 )
@@ -20,8 +20,8 @@ class EditableFooterIntegrationTest(unittest.TestCase):
         self.portal = self.layer["portal"]
         setRoles(self.portal, TEST_USER_ID, ["Manager"])
 
-    def test_behavior_editable_footer(self):
-        behavior = getUtility(IBehavior, "collective.volto.footer.editable_footer")
+    def test_behavior_footer_editable(self):
+        behavior = getUtility(IBehavior, "collective.volto.footer.editable")
         self.assertEqual(
             behavior.marker,
             IEditableFooterMarker,
