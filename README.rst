@@ -31,19 +31,34 @@
 collective.volto.footer
 =======================
 
-An add-on for Plone
+Backend add-on for Plone that provides editable footer functionality for Volto sites.
+
+.. raw:: html
+
+   <p align="center">
+     <img src="https://github.com/user-attachments/assets/74cabe79-39a1-4822-b8f6-8d5fce3f47b0" alt="Volto Footer Demo" width="800" />
+   </p>
+
+This backend add-on provides the necessary behaviors and content types to make footers editable in Volto sites. It allows you to customize footers by adding blocks to them, with context-aware footer selection based on the current page location.
+
+**Requirements:**
+- This backend add-on requires `volto-footer <https://github.com/collective/volto-footer>`_ to be installed on the frontend.
 
 Features
 --------
 
-- Can be bullet points
-
+- **Editable Footer Behavior**: Adds behavior to make content types support editable footers
+- **Context-aware Footer Selection**: Automatically selects the most appropriate footer based on page location  
+- **Block-based Footer Content**: Supports any type of Volto blocks in footer content
+- **Flexible Configuration**: The editable footer behavior can be activated on any content type
 
 Examples
 --------
 
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
+This add-on works together with the volto-footer frontend package to provide:
+- Customizable footer content using Volto blocks
+- Hierarchical footer inheritance based on content location
+- Easy management of footer content through the Plone interface
 
 
 Documentation
