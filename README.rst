@@ -36,7 +36,7 @@ Backend add-on for Plone that provides editable footer functionality for Volto s
 .. raw:: html
 
    <p align="center">
-     <img src="https://github.com/user-attachments/assets/74cabe79-39a1-4822-b8f6-8d5fce3f47b0" alt="Volto Footer Demo" width="800" />
+     <img src="https://github.com/user-attachments/assets/74cabe79-39a1-4822-b8f6-8d5fce3f47b0" alt="Volto Footer Demo" />
    </p>
 
 This backend add-on provides the necessary behaviors and content types to make footers editable in Volto sites. It allows you to customize footers by adding blocks to them, with context-aware footer selection based on the current page location.
@@ -59,21 +59,6 @@ This add-on works together with the volto-footer frontend package to provide:
 - Customizable footer content using Volto blocks
 - Hierarchical footer inheritance based on content location
 - Easy management of footer content through the Plone interface
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
-
 
 Installation
 ------------
