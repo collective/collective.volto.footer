@@ -16,7 +16,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.volto.footer",
-    version="1.1",
+    version="1.2",
     description="An add-on for Plone",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
