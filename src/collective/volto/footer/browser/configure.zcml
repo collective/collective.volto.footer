@@ -4,11 +4,4 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="collective.volto.footer">
 
-  <!-- Publish static files -->
-  <plone:static
-      name="collective.volto.footer"
-      type="plone"
-      directory="static"
-      />
-
 </configure>
