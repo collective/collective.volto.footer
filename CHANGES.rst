@@ -5,6 +5,9 @@ Changelog
 1.3 - (unreleased)
 ------------------
 
+- Add new translation strings
+  [macagua]
+
 - Add more improvements about the add-on documentation
   [macagua]
 

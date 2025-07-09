@@ -1,0 +1,46 @@
+#--- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+#SOME DESCRIPTIVE TITLE.
+#FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-07-09 12:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.volto.footer\n"
+
+#: ../behaviors/footer.py:32
+msgid "Define the footer blocks for this project"
+msgstr ""
+
+#: ../behaviors/footer.py:31
+msgid "Footer Blocks"
+msgstr ""
+
+#: ../configure.zcml:28
+msgid "Installs the collective.volto.footer add-on."
+msgstr ""
+
+#: ../behaviors/footer.py:26
+msgid "Layout"
+msgstr ""
+
+#: ../configure.zcml:37
+msgid "Uninstalls the collective.volto.footer add-on."
+msgstr ""
+
+#: ../configure.zcml:28
+msgid "collective.volto.footer"
+msgstr ""
+
+#: ../configure.zcml:37
+msgid "collective.volto.footer (uninstall)"
+msgstr ""
