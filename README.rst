@@ -40,29 +40,48 @@ https://github.com/user-attachments/assets/64b0b329-86f2-4dfd-afc6-742b0802f051
 
 This backend add-on provides the necessary behaviors and content types to make footers editable in Volto sites. It allows you to customize footers by adding blocks to them, with context-aware footer selection based on the current page location.
 
-**Requirements:**
-- This backend add-on requires `volto-footer <https://github.com/collective/volto-footer>`_ to be installed on the frontend.
 
 Features
 --------
 
 - **Editable Footer Behavior**: Adds behavior to make content types support editable footers
-- **Context-aware Footer Selection**: Automatically selects the most appropriate footer based on page location  
+- **Context-aware Footer Selection**: Automatically selects the most appropriate footer based on page location
 - **Block-based Footer Content**: Supports any type of Volto blocks in footer content
 - **Flexible Configuration**: The editable footer behavior can be activated on any content type
+
+
+Screenshots
+-----------
+
+After installation, you will find a new behavior available, go to ``Site Setup`` > ``Content Types`` there select the ``Plone Site`` content type and
+click on the ``Behaviors`` tab, there you can see the new behavior called ``Editable Footer`` as the following screenshot:
+
+.. figure:: https://raw.githubusercontent.com/collective/collective.volto.footer/refs/heads/main/docs/images/editable-footer-behavior.png
+   :align: center
+   :height: 77px
+   :width: 876px
+   :alt: The Editable Footer Behavior
+
+   The Editable Footer Behavior.
+
 
 Examples
 --------
 
-This add-on works together with the volto-footer frontend package to provide:
+This add-on works together with the `volto-footer <https://github.com/collective/volto-footer>`_ frontend package to provide:
 - Customizable footer content using Volto blocks
 - Hierarchical footer inheritance based on content location
 - Easy management of footer content through the Plone interface
 
+
 Installation
 ------------
 
-Install collective.volto.footer by adding it to your buildout::
+**Requirements:**
+
+- This backend add-on requires `volto-footer <https://github.com/collective/volto-footer>`_ to be installed on the frontend.
+
+Install ``collective.volto.footer`` by adding it to your buildout::
 
     [buildout]
 
@@ -74,6 +93,22 @@ Install collective.volto.footer by adding it to your buildout::
 
 and then running ``bin/buildout``
 
+Alternative, if you using ``pyproject.toml`` file:
+
+Add the ``collective.volto.footer`` into the file ``backend/pyproject.toml`` in the section ``dependencies``.
+
+::
+
+    dependencies = [
+        "Products.CMFPlone==6.1.2",
+        "plone.api",
+        "plone.restapi",
+        "plone.volto",
+        "collective.volto.footer",
+    ]
+
+and then running ``make backend-install``.
+
 
 Authors
 -------
@@ -84,9 +119,7 @@ Provided by awesome people ;)
 Contributors
 ------------
 
-Put your name here, you deserve it!
-
-- ?
+Please, can you checkout the `CONTRIBUTORS <https://raw.githubusercontent.com/collective/collective.volto.footer/refs/heads/main/CONTRIBUTORS.rst>`_ file.
 
 
 Contribute
@@ -94,17 +127,15 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/collective.volto.footer/issues
 - Source Code: https://github.com/collective/collective.volto.footer
-- Documentation: https://docs.plone.org/foo/bar
 
 
 Support
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+If you are having issues, please let us know at our `issue tracker <https://github.com/collective/collective.volto.footer/issues>`_.
 
 
 License
 -------
 
-The project is licensed under the GPLv2.
+The project is licensed under the `GPLv2 <https://raw.githubusercontent.com/collective/collective.volto.footer/refs/heads/main/LICENSE.GPL>`_.
