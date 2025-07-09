@@ -74,6 +74,14 @@ This add-on works together with the `volto-footer <https://github.com/collective
 - Easy management of footer content through the Plone interface
 
 
+Translations
+============
+
+This product has been translated into:
+
+- Spanish
+
+
 Installation
 ------------
 
